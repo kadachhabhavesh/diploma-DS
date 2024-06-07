@@ -35,7 +35,7 @@ int performOperation(int op1,int op2,char operater){
 			printf("invalid operater");
 	}
 }
-void postfixEvalution(char prefix[]){
+void prefixEvalution(char prefix[]){
 	int len;
 	while(prefix[len]!='\0') len++;
 	
@@ -57,5 +57,5 @@ void main(){
 	char prefix[100];
 	printf("Enter prefix : ");
 	gets(prefix);
-	postfixEvalution(prefix);
+	prefixEvalution(prefix);
 }
