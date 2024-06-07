@@ -45,12 +45,11 @@ void postfixEvalution(char prefix[]){
 			push(s,&top,prefix[i]-'0',n);
 		}
 		else{
-			int op2 = pop(s,&top);
 			int op1 = pop(s,&top);
+			int op2 = pop(s,&top);
 			value = performOperation(op1,op2,prefix[i]);
 			push(s,&top,value,n);
-		}
-			
+		}	
 	}
 	printf("\n%d",pop(s,&top));
 }
