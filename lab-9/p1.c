@@ -87,34 +87,34 @@ void main(){
 	struct Node* first = NULL;
 	int choice=-1,x,n;
 	do{
-		printf("\n1.Insert before given node\n2.Insert after given node\n3.Delete specific\n4.Display all nodes.\nEnter your choice : ");
+		printf("\n2.insert at beg\n2.Insert before given node\n3.Insert after given node\n4.Delete specific\n5.Display all nodes.\nEnter your choice : ");
 		scanf("%d",&choice);
 		switch(choice){
-			case 6:
+			case 1:
 				printf("enter data to be insert : ");
 		 		scanf("%d",&x);
 		 		InsertAtBeg(x,&first);
 		 		break;
-		 	case 1:
+		 	case 2:
 		 		printf("enter data to be insert : ");
 		 		scanf("%d",&x);
 		 		printf("enter node before insert : ");
 		 		scanf("%d",&n);
 		 		insertBeforeNode(x,&first,n);
 		 		break;
-		 	case 2:
+		 	case 3:
 		 		printf("enter data to be insert : ");
 		 		scanf("%d",&x);
 		 		printf("enter node after insert : ");
 		 		scanf("%d",&n);
 		 		insertAfterNode(x,&first,n);
 		 		break;
-		 	case 3:
+		 	case 4:
 		 		printf("enter node to be delete : ");
 		 		scanf("%d",&n);
 		 		deleteSpec(&first,n);
 		 		break;
-		 	case 4:
+		 	case 5:
 		 		display(first);
 		 		break;
 		 	default:
